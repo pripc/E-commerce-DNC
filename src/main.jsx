@@ -7,7 +7,7 @@ import {
 import Login from './views/Login/Login'
 import Home from './views/Home/Home'
 import Product from './views/Product/Product'
-import './index.css'
+import './index.scss'
 
 const router = createBrowserRouter([
   {
