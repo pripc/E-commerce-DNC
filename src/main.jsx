@@ -20,7 +20,7 @@ const router = createBrowserRouter([
     element: <Home data={itens}/>,
   },
   {
-    path: "/product",
+    path: "/product/:productid",
     element: <Product />,
   },
 ]);
