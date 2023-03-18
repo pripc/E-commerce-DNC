@@ -12,11 +12,11 @@ import './index.scss'
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Home />,
+    element: <Login />,
   },
   {
     path: "/home",
-    element: <Login/>,
+    element: <Home/>,
   },
   {
     path: "/product",
