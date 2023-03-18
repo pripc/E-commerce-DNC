@@ -8,9 +8,7 @@ function Login() {
   return (
     <div className="Login">
       <Header />
-      <label>Digite seu CPF</label>
-      <input placeholder='DIGITE SEU cpf'></input>
-      <button> <Link to={'./home'}>Login</Link></button>
+      
     </div>
   )
 }
