@@ -8,6 +8,7 @@ import Login from './views/Login/Login'
 import Home from './views/Home/Home'
 import Product from './views/Product/Product'
 import './index.css'
+import { itens } from './mock/productMock' 
 
 const router = createBrowserRouter([
   {
@@ -16,7 +17,7 @@ const router = createBrowserRouter([
   },
   {
     path: "/home",
-    element: <Home />,
+    element: <Home data={itens}/>,
   },
   {
     path: "/product",
