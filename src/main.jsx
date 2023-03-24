@@ -8,7 +8,7 @@ import Login from './views/Login/Login'
 import Home from './views/Home/Home'
 import Product from './views/Product/Product'
 import './index.css'
-import { itens } from './mock/productMock' 
+import { itens } from './mock/productMock.jsx' 
 
 
 const router = createBrowserRouter([
