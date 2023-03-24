@@ -1,1 +1,25 @@
 @use "../../sass/variables.scss" as *;
+
+.cards{
+    text-align: center;
+    background-color: white;
+    width:330px;
+    border-radius: 8px;
+    margin-bottom:27px;
+
+}
+.cards__img{
+    border-radius: 8px;
+    width:330px;
+}
+.cards__title{
+    font-weight: 400;
+    font-size:16px;
+}
+.cards__button{
+    @include button-home
+}
+.cards__button a{
+    font-size: 14px;
+    @include a
+}
