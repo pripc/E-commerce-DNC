@@ -5,6 +5,7 @@ import {
   RouterProvider,
 } from "react-router-dom";
 import Login from './views/Login/Login'
+import Cadastro from './views/Cadastro/Cadastro'
 import Home from './views/Home/Home'
 import Product from './views/Product/Product'
 import './index.css'
@@ -15,6 +16,10 @@ const router = createBrowserRouter([
   {
     path: "/",
     element: <Login />,
+  },
+  {
+    path: "/cadastro",
+    element: <Cadastro />,
   },
   {
     path: "/home",
