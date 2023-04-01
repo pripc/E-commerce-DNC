@@ -6,7 +6,7 @@ import Footer from '../../components/Footer/footer'
 import Cards from '../../components/Cards/cards'
 
 const Home = ({data}) => {
-  console.log(data)
+   console.log(data)
 
   return (
     <div>
