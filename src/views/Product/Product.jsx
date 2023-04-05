@@ -1,5 +1,6 @@
 import React from 'react'
-import Header from "../../components/Header/header";
+import HeaderSearch from "../../components/HeaderSearch/headerSearch";
+import Footer from '../../components/Footer/footer'
 import { useParams } from 'react-router-dom';
 import ProductDetail from '../../components/ProductDetail/productDetail';
 
@@ -10,8 +11,9 @@ const Product = ({ data }) => {
 
   return (
     <div>
-      <Header />
+      <HeaderSearch />
       <ProductDetail data={selectedProduct} />
+      <Footer />
     </div>
   )
 }
