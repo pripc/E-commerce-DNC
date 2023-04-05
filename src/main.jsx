@@ -8,7 +8,7 @@ import Login from './views/Login/Login'
 import Cadastro from './views/Cadastro/Cadastro'
 import Home from './views/Home/Home'
 import Product from './views/Product/Product'
-import './index.css'
+import './index.scss'
 import { itens } from './mock/productMock.jsx' 
 
 
