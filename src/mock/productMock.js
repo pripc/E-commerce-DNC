@@ -4,7 +4,7 @@ export const itens = [
       img: "./src/assets/IMG01.png'",
       nome: "Microsoft Xbox Series X | Preto ",
       descrição: "Apresentamos o Xbox Series X, o console mais rápido e poderoso de todos os tempos. Jogue milhares de títulos de quatro gerações de consoles- todos os jogos têm melhor aparência e são melhor executados no Xbox Series X. No coração do Series X está a Xbox Velocity Architecture, que combina um SSD personalizado e software integrado para diminuir significativamente os tempos de carregamento dentro e fora do jogo. ",
-      preço:"R$ 4.799,00"  
+      preço:"R$ 4.799,00",  
     },
       
     {

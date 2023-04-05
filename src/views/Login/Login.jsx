@@ -6,9 +6,9 @@ import Header from "../../components/Header/header";
 
 const login = () => {
   return (
-
+    <div>
+    <Header />
     <section className='login'>
-        <Header />
         <form className='login__form'>
             <h1>Acesse com seu login ou cadastre-se!</h1>
             <h2>você pode entrar com seu CPF.</h2>
@@ -40,6 +40,7 @@ const login = () => {
         </form>
 
     </section>
+    </div>
 
   )
 }
