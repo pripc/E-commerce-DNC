@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from "react-router-dom";
-import "./index.scss";
-import Header from "../../components/Header/header";
+import "./index.css";
 
 
 
@@ -10,7 +9,7 @@ const cadastro = () => {
   
   return (
     <section className='cadastro'>
-        <Header />
+        {/* <Header /> */}
         <form className='cadastro__form'>
             <h1>Faça o seu cadastro</h1>
             <h2>e tenha acesso a uma infinidade de produtos!</h2>
