@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700;800&display=swap");
+
+.cadastro{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+h1{
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 35px;
+    color: #000000;
+}
+
+h2{
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 26px;
+}
+
+.cadastro__input-wrapper{
+    display: flex;
+    flex-direction: column;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: left;
+}
+
+.cadastro__input-wrapper input{
+    width: 524px;
+    height: 52px;
+    background: rgba(255, 255, 255, 0.9);
+    border: 2px solid #7A7A7A;
+    border-radius: 10px;
+}
+
+.cadastro__input-wrapper label{
+    margin-top: 31px;
+    margin-bottom: 12px;
+}
+
+button {
+    margin-top: 66px;
+    width: 524px;
+    height: 48px;
+    background: #0C70F2;
+    border-radius: 6px;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 21px;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+}
+
+button a {
+    text-decoration: none;
+    color: #ffffff;
+  }
+
+  h3 {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 13px;
+    line-height: 21px;
+    color: #555454;
+   text-align: right;
+  }
+
+  h3 a {
+    
+    color: #555454;
+  }
