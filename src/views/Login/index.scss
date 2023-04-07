@@ -6,7 +6,7 @@
     align-items: center;
     justify-content: center;
     text-align: center;
-
+}
     h1 {
         font-family: 'Raleway';
         font-style: normal;
@@ -83,6 +83,20 @@
     }
 
   h3 a {
-    
     color: #555454;
+  }
+
+  
+  #erroCPF1{
+    text-align: end;
+    font-size: 15px;
+  }
+  #erroSENHA1{
+    text-align: end;
+    font-size: 15px;
+  }
+
+  #erroCS{
+    text-align: center;
+    font-size: 15px;
   }
