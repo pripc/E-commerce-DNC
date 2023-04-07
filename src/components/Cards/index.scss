@@ -6,6 +6,8 @@
     width:330px;
     border-radius: 8px;
     margin-bottom:27px;
+    margin-right:160px;
+    text-align: center;
 
 }
 .cards__img{
@@ -15,9 +17,12 @@
 .cards__title{
     font-weight: 400;
     font-size:16px;
+    text-align: center;
 }
 .cards__button{
-    @include button-home
+    @include button-home;
+    width:200px;
+    
 }
 .cards__button a{
     font-size: 14px;

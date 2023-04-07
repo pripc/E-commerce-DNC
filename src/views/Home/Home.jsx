@@ -9,12 +9,17 @@ const Home = ({data}) => {
    console.log(data)
 
   return (
-    <div>
+    <div className='home'>
       <HeaderSearch/>
-    
+      <section >
+        <img className='home_img' src='../src/assets/cover.png' alt='Website Cover'/>
+      </section>
+      <section className='home_cards'>
       {data.map( (product) => 
       (<Cards key={data.id} data={product}/>
       ))}
+      </section>
+
     <Footer />
     </div>
   )
