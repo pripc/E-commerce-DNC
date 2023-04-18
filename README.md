@@ -104,6 +104,55 @@ React Router<br>
 Vite<br>
 
 
+### Códigos e funções 
+
+Para o projeto foi utilizada a criação de componentes e views utilizando o REACT como fundamentação de todo os escopo.
+
+Primeiramente baseado no figma proposto analisamos todos os possiveis componentes e views do projeto, após essa analise e planejamento esses foram os componentes: 
+
+Header, HeaderSearch, Cards, Footer, ProductDetail, ModalCart e ModalForm.
+
+Essas foram as seguintes Views do projeto:
+Login, Home e Product
+
+### Explicando cada compenente e suas funções:
+
+*Header<br>
+Componente responsavel por ser o cabeçalho do site, esse componente está presente em todas as páginas do projeto.
+
+*HeaderSearch<br>
+Componente responsavel por ser o cabeçalho das demais páginas, tirando a de login, esse componente possui um campo de input para fazer uma possivel pesquisa, um botão para executar o input e tambem links para direcionar para outras páginas (Novidades, Jogos, Video Games, e etc)
+
+*Footer <br>
+Componente responsavel por ser o rodapé do site, contendo a logo e outras informações relevantes.
+
+*Cards<br>
+Componente responsavel por conter imagem, descrição e botão "ver mais" dos produtos, cada produto com sua imagem e descrição, o produto quando clicado em seu botão "ver mais" é direcionado para outra página.
+
+*ProductDetail<br>
+Componente responsavel por ser a página resposta do click do botão "ver mais" do componente Cards. Contém as informações do produto e um botão chamado "Adicionar ao carrinho", que quando clicado abre um Modal com dois botões: Continuar comprando e Finalizar compra.
+
+*ModalCart<br>
+Componente responsavel por ser o Modal resultado do clique do botão Adicionar ao Carrinho do componente ProductDetail, contendo a imagem, nome, preço e cor do produto escolhido. Contém dois botões: Continuar comprando, que quando clicado volta para pagina de selecão de produtos, e o botão Finalizar compra, que quando clicado é direcionado para outro Modal.
+
+
+*ModalForm<br>
+Componente responsavel por ser o Modal resultado do clique do botão Finalizar compra do componente ModalCart. Esse componente basicamente é a finalização da compra, onde é requisitado através de um formulário informações como: Nome, CPF, Endereço e Forma de Pagamento, o modal tambem possui um botão chamado Confirmar Pedido.
+
+
+### Explicando cada View e suas funções:
+
+*Login<br>
+É a página inicial do E-commerce, contendo apenas o componente Header. A estruturação do formulário foi criado na própria View. É solicitado nesse form o CPF e Senha do Usuário e um botão de Entrar. Após ser validado os campos a página Home "entra em cena".
+
+*Home<br>
+É a página principal do site, contendo os componentes HeaderSearch, Footer e Carts. A estrutução dessa View é feita chamando os componentes já criados e posicionando os mesmos através do Scss.
+
+
+*Product<br>
+É a página de detalhamento do produto, contendo os componentes HeaderSearch, Footer e ProductDetail, com foco em montrar a imagem, titulo, preço, opção de cores e descrição daquele produto selecionado. Contem o botão "Adicionar ao carrinho", que quando clicado, abre um Modal.
+
+
 
 ### Quais foram as dificuldades encontradas no desenvolvimento?
 Algumas dificuldades encontradas:
@@ -112,7 +161,8 @@ Algumas dificuldades encontradas:
 
 * Fazer um GIT PULL da DEVELOP e não vir os dados alinhados.
 
-* 
+* Trabalhar com outras branchs.
+
 
 
 
