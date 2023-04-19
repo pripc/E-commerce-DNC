@@ -27,7 +27,6 @@ const ProductDetail = ({ data }) => {
     const productDetailClass = `product-detail ${showModal ? 'product-detail--modal-active' : ''}`;
 
 return (
-    {/*A mudança dessa linha de codigo foi necessária pafa atribuir dinamismo a classe com base no valor do showModal, antes a classe era atribuida diretamente ao elemento <div> independente do valor do modal, mas agora a classe é atribuida a variavel "productDetailClass" com base no valor do estado do ShowModal*/}
     <div className={productDetailClass}>
 
         {/*Acrescimo de codigo para renderizar o ModalForm que recebe as props onClose e data, que é uma função de callback.*/}
