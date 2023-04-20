@@ -1,1 +1,21 @@
 @use "../../sass/variables.scss" as *;
+
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+br{
+    color:$AZUL-DNC;
+
+}
+
+.closeModal{
+    position:absolute;
+   background-color: #fff; 
+   color:black;
+   width: 20px;
+   margin-left: 1050px;
+}
+
