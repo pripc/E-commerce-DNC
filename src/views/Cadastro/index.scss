@@ -1,3 +1,7 @@
+form{
+   text-align: left;
+}
+
 .cadastro{
     display: flex;
     flex-direction: column;
@@ -35,8 +39,8 @@ h2{
 }
 
 .cadastro__input-wrapper input{
-    width: 524px;
-    height: 52px;
+  width: 38vw;
+  height: 12vh;
     background: rgba(255, 255, 255, 0.9);
     border: 2px solid #7A7A7A;
     border-radius: 10px;
@@ -49,8 +53,8 @@ h2{
 
 button {
     margin-top: 66px;
-    width: 524px;
-    height: 48px;
+    width: 38vw;
+    height: 12vh;
     background: #0C70F2;
     border-radius: 6px;
     font-family: 'Raleway';
@@ -63,11 +67,6 @@ button {
     cursor: pointer;
 }
 
-button a {
-    text-decoration: none;
-    color: #ffffff;
-  }
-
   h3 {
     font-family: 'Raleway';
     font-style: normal;
@@ -75,20 +74,17 @@ button a {
     font-size: 13px;
     line-height: 21px;
     color: #555454;
-   text-align: right;
-  }
-
-  h3 a {
-    
-    color: #555454;
+    text-align: left;
   }
 
   #erroCPF{
     text-align: end;
     font-size: 15px;
+    width: 38vw;
   }
 
   #erroSENHA{
     text-align: end;
     font-size: 15px;
+    width: 38vw;
   }
