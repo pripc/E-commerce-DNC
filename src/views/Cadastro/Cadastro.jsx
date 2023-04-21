@@ -8,8 +8,11 @@ import Header from "../../components/Header/Header";
 const cadastro = () => {
   
   return (
+    <div>
+      <Header />
+  
     <section className='cadastro'>
-        <Header />
+        
         <form className='cadastro__form'>
             <h1>Faça o seu cadastro</h1>
             <h2>e tenha acesso a uma infinidade de produtos!</h2>
@@ -33,7 +36,7 @@ const cadastro = () => {
                 <input type='password' id='password' name='password' placeholder='De 4 a 10 dígitos' className='cadastro__input-senha'/>
                 <div id="erroSENHA"></div>
             </div>
-            <button type='button' onClick={() => {
+            <button id="botao23" type='button' onClick={() => {
               let cpf = document.getElementById('cpf').value;
               let senha = document.getElementById('password').value;
               let res = document.getElementById('error');
@@ -82,6 +85,7 @@ const cadastro = () => {
         </form>
 
     </section>
+    </div>
   )
 }
 

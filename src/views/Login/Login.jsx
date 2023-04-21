@@ -1,13 +1,14 @@
 import React from 'react';
 import { Link } from "react-router-dom";
 import "./index.scss";
-//import Header from "../../components/Header/Header";
+import Header from "../../components/Header/Header";
 
 const login = () => {
   return (
-
+    <div>
+      <Header />
     <section className='login'>
-        {/* <Header /> */}
+        
         <form className='login__form'>
             <h1>Acesse com seu login ou cadastre-se!</h1>
             <h2>você pode entrar com seu CPF.</h2>
@@ -33,7 +34,7 @@ const login = () => {
                 
             </div>
             
-            <button type="button" onClick={() =>{
+            <button id="botao23" type="button" onClick={() =>{
               const cpf1 = document.getElementById('cpf1');
               const senha1 = document.getElementById('password1');
               const erroCS = document.getElementById('erroCS');
@@ -64,6 +65,7 @@ const login = () => {
         </form>
 
     </section>
+    </div>
 
   )
 
