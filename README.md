@@ -196,7 +196,7 @@ export const itens = [
       ]
 ```
 
-### Explicando cada compenente e suas funções:
+### Explicando cada componente e suas funções:
 
 *Header<br>
 Componente responsavel por ser o cabeçalho do site, esse componente está presente em todas as páginas do projeto.
