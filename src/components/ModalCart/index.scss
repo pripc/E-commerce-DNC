@@ -30,7 +30,36 @@
     font-size: 90px;
 }
   
-  button {
+.h1end {
+  width: 40%;
+  font-size: 30px;
+  font-family: 'Raleway';
+  font-style: normal;
+  color: $AZUL-DNC;
+  font-weight: bold;
+  margin-top: 60px;
+  margin-bottom: 30px;
+  margin-left: 30%;
+  text-align: left;
+  }
+  
+  label {
+  display: block;
+  width: 40%;
+  margin: 0 30%;
+  margin-bottom: 8px;
+  font-size: 15px;
+  }
+  
+  #inputEnd {
+  width: 40%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  margin: 0 30% 20px 30%;
+  }
+
+  .btnEnd {
     margin-top: 20px;
     padding: 10px 20px;
     border: none;
@@ -39,8 +68,30 @@
     color: #fff;
     font-size: 16px;
     cursor: pointer;
+    width: 35%;
+    margin: 30px 32.5%;
   }
   
   button:hover {
-    background-color: #0069d9;
+    background-color: rgba(43, 43, 43, 0.777);
+  }
+
+  .error {
+    color: red;
+    font-size: 12px;
+    display: block;
+    width: 40%;
+    margin: 0 30%;
+    text-align: right;
+  }
+
+  .input-valid {
+    border: 2px solid green;
+    background-color: rgba(198, 244, 198, 0.541);
+  }
+  
+  .input-invalid {
+    border: 2px solid red;
+    background-color: rgba(246, 195, 195, 0.498);
+    margin-bottom: 0px;
   }

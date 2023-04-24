@@ -29,7 +29,6 @@ const ProductDetail = ({ data }) => {
 return (
     <div className={productDetailClass}>
 
-        {/*Acrescimo de codigo para renderizar o ModalForm que recebe as props onClose e data, que é uma função de callback.*/}
         {showModal && <ModalForm onClose={handleCloseModal} data={data} />}
 
         <div className='product-detail__left-side'>
@@ -60,9 +59,8 @@ return (
                 ))}
             </div>
             <div>
-                {/*Adição de evento de clique ao botão  para chamar a função handleAddToCart pra chamar o modal*/}
+                
                 <button onClick={handleAddToCart}>
-                    // Adicionado o atributo alt a tag img como descrição alternativa aos leitores de tela.
                     <img src={cart_button} alt="cart button"/>
                     Adicionar ao carrinho
                 </button>
