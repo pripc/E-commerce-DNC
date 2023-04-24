@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React from 'react'
 import './index.scss'
 import cart_button from "../../assets/cart_button.png"
 import xbox from '../../assets/IMG01.png'
@@ -8,9 +8,7 @@ const ProductDetail = ({ data }) => {
     const[OpenModal, setOpenModal] = useState(false)
     console.log(data);
 
-
   return (
-    
     <div className='product-detail'>
         <div className='product-detail__left-side'>
             <div className='product-detail__card'>
@@ -51,7 +49,7 @@ const ProductDetail = ({ data }) => {
     <button className="finalizar">Finalizar</button>
     </Modal>
             <div>
-                <button className="btn" onClick={() => setOpenModal(true) }>
+                <button>
                     <img src={cart_button}/>
                     Adicionar ao carrinho
                 </button>
@@ -60,7 +58,6 @@ const ProductDetail = ({ data }) => {
 
     </div>
   )
-
 }
 
 export default ProductDetail;
