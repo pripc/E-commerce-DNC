@@ -1,4 +1,5 @@
-import React from 'react'
+
+import React, {useState} from 'react'
 import './index.scss'
 import cart_button from "../../assets/cart_button.png"
 import xbox from '../../assets/IMG01.png'
@@ -9,7 +10,9 @@ const ProductDetail = ({ data }) => {
     console.log(data);
 
   return (
+    
     <div className='product-detail'>
+
         <div className='product-detail__left-side'>
             <div className='product-detail__card'>
                 <img src={data.img} alt={data.descrição}/>
@@ -37,19 +40,19 @@ const ProductDetail = ({ data }) => {
                     ></div>
                 ))}
             </div>
-    <Modal isOpen={OpenModal}setModalOpen={() => setOpenModal(!OpenModal)}>
-    <img className ="xbox" src={xbox} alt="Xbox"/>
-    <h2 className="cart">Meu Carrinho</h2>
-    <p className="p">Microsoft Xbox Series X | Preto</p>
-    <hr className="line"></hr>
-    <p className="price">R$ 4.799,00</p>
-    <p className="cor">Cor: Preto</p>
-    <div className="color"></div>
-    <button className="continuar">Continuar Comprando</button>
-    <button className="finalizar">Finalizar</button>
-    </Modal>
+                <Modal isOpen={OpenModal}setModalOpen={() => setOpenModal(!OpenModal)}>
+                <img className ="xbox" src={xbox} alt="Xbox"/>
+                <h2 className="cart">Meu Carrinho</h2>
+                <p className="p">Microsoft Xbox Series X | Preto</p>
+                <hr className="line"></hr>
+                <p className="price">R$ 4.799,00</p>
+                <p className="cor">Cor: Preto</p>
+                <div className="color"></div>
+                <button className="continuar">Continuar Comprando</button>
+                <button className="finalizar">Finalizar</button>
+                </Modal>
             <div>
-                <button>
+                <button className="btn" onClick={() => setOpenModal(true) }>
                     <img src={cart_button}/>
                     Adicionar ao carrinho
                 </button>
