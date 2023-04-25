@@ -1,6 +1,4 @@
-// Acrescimo da função useState do pacote react.
 import { React, useState } from 'react'
-// Essa linha de codigo importa o component modalForm
 import ModalForm from '../ModalForm/modalForm'
 import './index.scss'
 import cart_button from "../../assets/cart_button.png"
@@ -8,28 +6,21 @@ import cart_button from "../../assets/cart_button.png"
 const ProductDetail = ({ data }) => {
     console.log(data);
 
-    // Definindo o estado "showModal" com o valor inicial false.
     const [showModal, setShowModal] = useState(false);
 
-    // Função chamada quando um evento "Adicionar ao carrinho" é acionado.
     const handleAddToCart = () => {
-    // Atualiza o estado "showModal" para true.
         setShowModal(true);
     };
 
-    // Função chamada quando um evento "Fechar" é acionado dentro do modal.
-    const handleCloseModal = () => {
-    // Atualiza o estado "showModal" para false.
+    const handleCloseModal = () => {    
         setShowModal(false);
     };
 
-    // Essa linha de codigo muda a className da div product-detail quando o modal estiver ativo, isso é necessário para que a estilização do fundo do modal fique igual ao figma.
     const productDetailClass = `product-detail ${showModal ? 'product-detail--modal-active' : ''}`;
 
 return (
     <div className={productDetailClass}>
 
-        {/*Acrescimo de codigo para renderizar o ModalForm que recebe as props onClose e data, que é uma função de callback.*/}
         {showModal && <ModalForm onClose={handleCloseModal} data={data} />}
 
         <div className='product-detail__left-side'>
@@ -60,7 +51,6 @@ return (
                 ))}
             </div>
             <div>
-                {/*Adição de evento de clique ao botão  para chamar a função handleAddToCart pra chamar o modal*/}
                 <button onClick={handleAddToCart}>
                     <img src={cart_button} alt="cart button"/>
                     Adicionar ao carrinho

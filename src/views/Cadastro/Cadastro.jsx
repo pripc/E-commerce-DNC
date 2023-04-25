@@ -14,8 +14,8 @@ const cadastro = () => {
     <section className='cadastro'>
         
         <form className='cadastro__form'>
-            <h1>Faça o seu cadastro</h1>
-            <h2>e tenha acesso a uma infinidade de produtos!</h2>
+            <h1 className='h1_cadastro'>Faça o seu cadastro</h1>
+            <h2 className='h2_cadastro'>e tenha acesso a uma infinidade de produtos!</h2>
             <div className='cadastro__input-wrapper'>
                 <label>Digite seu CPF:</label>
                 <input type='text' name='cpf' placeholder="Somente números" id="cpf" className='cadastro__input-cpf' maxLength="14" onKeyDown={() => {
@@ -81,7 +81,7 @@ const cadastro = () => {
                 Registrar!
             </button>
             <div id="error"></div>
-            <h3>Já tem cadastro? Clique <Link to={"/"}>aqui</Link> para voltar a página de login.</h3>
+            <h3 className='h3_cadastro'>Já tem cadastro? Clique <Link to={"/"}>aqui</Link> para voltar a página de login.</h3>
         </form>
 
     </section>
