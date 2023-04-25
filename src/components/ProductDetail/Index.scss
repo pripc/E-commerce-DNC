@@ -94,6 +94,8 @@
             line-height: 20px;
             text-align: center;
             color: #FFFFFF;
+
+            cursor: pointer;
         }
     }
 }
@@ -107,6 +109,9 @@
     display: none;
 }
 
+.product-detail--modal-active .product-detail__right-side {
+    display: none;
+}
 .product-detail--modal-active .product-detail__right-side {
     display: none;
 }
