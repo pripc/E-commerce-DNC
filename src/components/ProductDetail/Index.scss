@@ -1,22 +1,16 @@
 @use "../../sass/variables.scss" as *;
 
 .product-detail {
-    display: grid;
-    grid-auto-flow: column;
-    grid-template-columns: 40% 60%;
+    display: flex;
+    justify-content: space-evenly;
     height: 854px;
     padding-top: 131px;
-
 
     &__left-side {
         display: flex;
         flex-direction: column;
-        padding-left:30%;
         gap: 1rem;
-        padding-right:100px;
-        padding-right: 0px;
     }
-
 
     &__card {
         p {
@@ -42,16 +36,13 @@
             margin: 0;
             padding-bottom: 19px;
             border-bottom: 2px solid $AZUL-DNC;
-            width: 85%;
+            width: 60%;
         }
     }
 
     &__right-side {
         display: flex;
         flex-direction: column;
-        width:800px;
-        padding-left:15%;
-
 
         h1 {
             margin: 0;
@@ -95,7 +86,6 @@
             border: 0;
             border-radius: 10px;
             margin-top: 130px;
-            margin-left: 54px;
 
             font-family: 'Raleway';
             font-style: normal;
@@ -114,9 +104,5 @@
 }
 
 .product-detail--modal-active .product-detail__left-side {
-    display: none;
-}
-
-.product-detail--modal-active .product-detail__right-side {
     display: none;
 }
