@@ -1,33 +1,33 @@
 @use "../../sass/variables.scss" as *;
 
 .modal {
-    position: fixed;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    background-color: rgba(219, 218, 218, 0.449);
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(219, 218, 218, 0.449);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
   
-  .modal__content {
-    background-color: white;
-    border-radius: 90px;
-    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.2);
-    padding: 20px;
-    width: 1000px;
-    height: 650px;
+.modal__content {
+  background-color: white;
+  border-radius: 90px;
+  box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  width: 1000px;
+  height: 650px;
 }
   
-  .modal__close {
-    position: absolute;
-    top: 0;
-    right: 90px;
-    cursor: pointer;
-    color: rgba(43, 43, 43, 0.777);
-    font-size: 90px;
+.modal__close {
+  position: absolute;
+  top: 0;
+  right: 90px;
+  cursor: pointer;
+  color: rgba(43, 43, 43, 0.777);
+  font-size: 90px;
 }
   
 .h1end {
@@ -41,57 +41,57 @@
   margin-bottom: 30px;
   margin-left: 30%;
   text-align: left;
-  }
+}
   
-  label {
+.labelEnd {
   display: block;
   width: 40%;
   margin: 0 30%;
   margin-bottom: 8px;
   font-size: 15px;
-  }
+}
   
-  #inputEnd {
+#inputEnd {
   width: 40%;
   padding: 10px;
   border-radius: 5px;
   border: 1px solid #ccc;
   margin: 0 30% 20px 30%;
-  }
+}
 
-  .btnEnd {
-    margin-top: 20px;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    background-color: #007bff;
-    color: #fff;
-    font-size: 16px;
-    cursor: pointer;
-    width: 35%;
-    margin: 30px 32.5%;
-  }
+.btnEnd {
+  margin-top: 20px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  width: 35%;
+  margin: 30px 32.5%;
+}
   
-  button:hover {
-    background-color: rgba(43, 43, 43, 0.777);
-  }
+button:hover {
+  background-color: rgba(43, 43, 43, 0.777);
+}
 
-  .error {
-    color: red;
-    font-size: 12px;
-    display: block;
-    width: 40%;
-    margin: 0 30%;
-    text-align: right;
-  }
+.error {
+  color: red;
+  font-size: 12px;
+  display: block;
+  width: 40%;
+  margin: 0 30%;
+  text-align: right;
+}
 
-  .input-valid {
-    border: 2px solid green;
-    background-color: rgba(198, 244, 198, 0.541);
-  }
+.input-valid {
+  border: 2px solid green;
+  background-color: rgba(198, 244, 198, 0.541);
+}
   
-  .input-invalid {
-    border: 2px solid red;
-    background-color: rgba(246, 195, 195, 0.498);
-    margin-bottom: 0px;
-  }
+.input-invalid {
+  border: 2px solid red;
+  background-color: rgba(246, 195, 195, 0.498);
+  margin-bottom: 0px;
+}
