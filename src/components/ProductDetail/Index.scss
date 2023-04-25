@@ -1,0 +1,25 @@
+
+            font-family: 'Raleway';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 20px;
+            text-align: center;
+            color: #FFFFFF;
+        }
+    }
+}
+
+// Essas linhas de codigos foram acrescentadas para que do fundo do modal fique escura conforme figma.
+.product-detail--modal-active{
+    background: #2D2D2D;
+}
+
+.product-detail--modal-active .product-detail__left-side {
+    display: none;
+}
+
+.product-detail--modal-active .product-detail__right-side {
+    display: none;
+}
+
