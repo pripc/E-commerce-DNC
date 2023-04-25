@@ -17,12 +17,15 @@ const ModalCart = ({ onClose }) => {
   };
 
   const validationSchema = Yup.object({
-    nome: Yup.string().required('Campo obrigatório'),
+    nome: Yup.string()
+      .required('Campo obrigatório'),
     cpf: Yup.string()
       .matches(/^\d{3}\.\d{3}\.\d{3}\-\d{2}$/, 'CPF inválido')
       .required('Campo obrigatório'),
-    endereco: Yup.string().required('Campo obrigatório'),
-    pagamento: Yup.string().required('Campo obrigatório'),
+    endereco: Yup.string()
+      .required('Campo obrigatório'),
+    pagamento: Yup.string()
+      .required('Campo obrigatório'),
   });
 
   const onSubmit = (values) => {
@@ -46,20 +49,32 @@ const ModalCart = ({ onClose }) => {
         >
           {({ errors, touched, isValidating}) => (
             <Form>
-              <label htmlFor="nome">Digite seu nome:</label>
+              <label 
+              className="labelEnd" 
+              htmlFor="nome">Digite seu nome:
+              </label>
+
               <Field 
               type="text" 
               id="inputEnd" 
               name="nome" 
               placeholder="Nome completo" 
               className={
-                  touched.nome && errors.nome ? 'input-invalid' : touched.nome ? 'input-valid' : ''
+                  touched.nome && errors.nome ? 'input-invalid' :
+                  touched.nome ? 'input-valid' : ''
                 }
                 classNamePrefix="input"
               />
-              <ErrorMessage name="nome" component="div" className="error" />
+              <ErrorMessage 
+              name="nome" 
+              component="div" 
+              className="error" />
 
-              <label htmlFor="cpf">Digite seu CPF:</label>
+              <label 
+              className="labelEnd" 
+              htmlFor="cpf">Digite seu CPF:
+              </label>
+
               <Field 
               type="text" 
               id="inputEnd" 
@@ -68,39 +83,62 @@ const ModalCart = ({ onClose }) => {
               as={InputMask}
               mask="999.999.999-99"
               className={
-                  touched.cpf && errors.cpf ? 'input-invalid' : touched.cpf ? 'input-valid' : ''
+                  touched.cpf && errors.cpf ? 'input-invalid' :
+                  touched.cpf ? 'input-valid' : ''
                 }
                 classNamePrefix="input"
               />
-              <ErrorMessage name="cpf" component="div" className="error" />
+              <ErrorMessage 
+              name="cpf" 
+              component="div" 
+              className="error" />
 
-              <label htmlFor="endereco">Endereço:</label>
+              <label 
+              className="labelEnd" 
+              htmlFor="endereco">Endereço:
+              </label>
+
               <Field 
               type="text" 
               id="inputEnd" 
               name="endereco" 
               placeholder="Endereço completo" 
               className={
-                  touched.endereco && errors.endereco ? 'input-invalid' : touched.endereco ? 'input-valid' : ''
+                  touched.endereco && errors.endereco ? 'input-invalid' :
+                  touched.endereco ? 'input-valid' : ''
                 }
                 classNamePrefix="input"  
               />
-              <ErrorMessage name="endereco" component="div" className="error" />
+              <ErrorMessage 
+              name="endereco" 
+              component="div" 
+              className="error" />
 
-              <label htmlFor="pagamento">Forma de Pagamento:</label>
+              <label 
+              className="labelEnd" 
+              htmlFor="pagamento">Forma de Pagamento:
+              </label>
+
               <Field 
               type="text" 
               id="inputEnd" 
               name="pagamento" 
               placeholder="" 
               className={
-                  touched.pagamento && errors.pagamento ? 'input-invalid' : touched.pagamento ? 'input-valid' : ''
+                  touched.pagamento && errors.pagamento ? 'input-invalid' :
+                  touched.pagamento ? 'input-valid' : ''
                 }
                 classNamePrefix="input"
               />
-              <ErrorMessage name="pagamento" component="div" className="error" />
+              <ErrorMessage 
+              name="pagamento" 
+              component="div" 
+              className="error" />
 
-              <button className="btnEnd" type="submit">Confirmar Pedido</button>
+              <button 
+              className="btnEnd" 
+              type="submit">Confirmar Pedido
+              </button>
             </Form>
           )}
         </Formik>
