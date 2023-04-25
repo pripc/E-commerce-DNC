@@ -5,9 +5,12 @@ import {
   RouterProvider,
 } from "react-router-dom";
 import Login from './views/Login/Login'
+import Cadastro from './views/Cadastro/Cadastro'
 import Home from './views/Home/Home'
 import Product from './views/Product/Product'
-import './index.css'
+import './index.scss'
+import { itens } from './mock/productMock.jsx' 
+
 
 const router = createBrowserRouter([
   {
@@ -15,12 +18,16 @@ const router = createBrowserRouter([
     element: <Login />,
   },
   {
-    path: "/home",
-    element: <Home />,
+    path: "/cadastro",
+    element: <Cadastro />,
   },
   {
-    path: "/product",
-    element: <Product />,
+    path: "/home",
+    element: <Home data={itens}/>,
+  },
+  {
+    path: "/product/:productid",
+    element: <Product data={itens}/>,
   },
 ]);
 

@@ -1,1 +1,17 @@
 @use "../../sass/variables.scss" as *;
+
+.home{
+    background-color: #2D2D2D;
+}
+
+.home_img{
+    width:100%;
+}
+
+.home_cards{
+    display:flex;
+    flex-wrap: wrap;
+    margin-left:100px;
+    justify-content: center;
+    margin-top: 40px;
+}
