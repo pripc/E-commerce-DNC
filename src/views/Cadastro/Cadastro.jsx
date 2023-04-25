@@ -47,29 +47,35 @@ const cadastro = () => {
               window.localStorage.setItem("cpf", cpf)
               window.localStorage.setItem("senha", senha)
               document.getElementById('cpf').style.borderColor = "#0f7b0f";
+              document.getElementById('cpf').style.backgroundColor = "rgba(198, 244, 198, 0.541)";
               erroCPF.innerHTML = '';
               erroSENHA.innerHTML = '';
               document.getElementById('password').style.borderColor = "#0f7b0f";
+              document.getElementById('password').style.backgroundColor = "rgba(198, 244, 198, 0.541)"; 
               alert("Cadastro realizado! Volte a página de login e aproveite nossos produtos!")
               setTimeout(()=> {window.location.href = "/";}, 1500);
               
               } else {
                 if(cpf.length != 14) {
                   document.getElementById('cpf').style.borderColor = "#e73550";
-                  erroCPF.innerHTML = 'CPF deve conter 11 dígitos, apenas números.'
+                  document.getElementById('cpf').style.backgroundColor = "rgba(246, 195, 195, 0.498)";
+                  erroCPF.innerHTML = 'CPF deve conter 11 números.'
                   erroCPF.style.color = "#e73550";
                 } else {
                   document.getElementById('cpf').style.borderColor = "#0f7b0f";
+                  document.getElementById('cpf').style.backgroundColor = "rgba(198, 244, 198, 0.541)";
                   erroCPF.innerHTML = ''
                   erroCPF.style.color = "";
                 }
                 
                 if(senha.length < 3 || senha.length > 11) {
                   document.getElementById('password').style.borderColor = "#e73550";
+                  document.getElementById('password').style.backgroundColor = "rgba(246, 195, 195, 0.498)";
                   erroSENHA.innerHTML = 'Senha deve conter de 4 a 10 dígitos.'
                   erroSENHA.style.color = "#e73550";
                 } else {
                   document.getElementById('password').style.borderColor = "#0f7b0f";
+                  document.getElementById('password').style.backgroundColor = "rgba(198, 244, 198, 0.541)";
                   erroSENHA.innerHTML = ''
                   erroSENHAs.style.color = "";
                 }
