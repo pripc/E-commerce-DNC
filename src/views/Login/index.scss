@@ -9,7 +9,7 @@
    
 }
 
-h1{
+.h1_login{
     font-family: 'Raleway';
     font-style: normal;
     font-weight: 500;
@@ -18,9 +18,10 @@ h1{
     color: #000000;
     width: 38vw;
     text-align: center;
+    margin-top: 9vh;
 }
 
-h2{
+.h2_login{
     font-family: 'Raleway';
     font-style: normal;
     font-weight: 500;
@@ -55,13 +56,10 @@ h2{
     
 }
 
-#botao23 {
+#botao232 {
   width: 38vw;
-  height: 12vh;
-}
-
-button {
-    margin-top: 66px;
+  height: 9vh;
+   margin-top: 66px;
     width: 38vw;
     height: 12vh;
     background: #0C70F2;
@@ -78,7 +76,7 @@ button {
 
 
 
-  h3 {
+  .h3_login {
     font-family: 'Raleway';
     font-style: normal;
     font-weight: 800;
@@ -88,10 +86,7 @@ button {
    text-align: right;
   }
 
-  h3 a {
-    
-    color: #555454;
-  }
+c
 
   #erroCPF1{
     text-align: end;

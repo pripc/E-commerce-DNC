@@ -10,8 +10,8 @@ const login = () => {
     <section className='login'>
         
         <form className='login__form'>
-            <h1>Acesse com seu login ou cadastre-se!</h1>
-            <h2>você pode entrar com seu CPF.</h2>
+            <h1 className='h1_login'>Acesse com seu login ou cadastre-se!</h1>
+            <h2 className='h2_login'> você pode entrar com seu CPF.</h2>
             <div className='login__input-wrapper'>
                 <label>Digite seu CPF:</label>
                 <input type='text' placeholder="Somente números" id="cpf1" className='login__input-cpf' maxLength="14" onKeyDown={() => {
@@ -34,7 +34,7 @@ const login = () => {
                 
             </div>
             
-            <button id="botao23" type="button" onClick={() =>{
+            <button id="botao232" type="button" onClick={() =>{
               const cpf1 = document.getElementById('cpf1');
               const senha1 = document.getElementById('password1');
               const erroCS = document.getElementById('erroCS');
@@ -61,7 +61,7 @@ const login = () => {
             </button>
             <div id="erroCS"></div>
           
-            <h3>Não tem cadastro? <Link to={"/cadastro"}>Cadastre-se aqui!</Link></h3>
+            <h3 className='h3_login'>Não tem cadastro? <Link to={"/cadastro"}>Cadastre-se aqui!</Link></h3>
         </form>
 
     </section>
