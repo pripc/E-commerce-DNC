@@ -42,7 +42,9 @@ const login = () => {
                 if(cpf1.value === window.localStorage.getItem('cpf') && senha1.value === window.localStorage.getItem('senha')){
                   
                   cpf1.style.borderColor = "#0f7b0f";
+                  cpf1.style.backgroundColor = "rgba(198, 244, 198, 0.541)";
                   senha1.style.borderColor = "#0f7b0f";
+                  senha1.style.backgroundColor = "rgba(198, 244, 198, 0.541)";
                   erroCS.innerHTML = "";
                   setTimeout(()=> {window.location.href = "/home";}, 1500);
                   
@@ -50,7 +52,9 @@ const login = () => {
                 erroCS.innerHTML = "Dados não encontrados! Favor corrigir dados ou realizar novo cadastro.";
                 erroCS.style.color =  "#e73550";
                 cpf1.style.borderColor = "#e73550";
+                cpf1.style.backgroundColor = "rgba(246, 195, 195, 0.498)";
                 senha1.style.borderColor = "#e73550";
+                senha1.style.backgroundColor = "rgba(246, 195, 195, 0.498)";
                
               }
               }

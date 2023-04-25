@@ -67,7 +67,7 @@
     font-family: 'Raleway';
     font-style: normal;
     font-weight: 800;
-    font-size: 18px;
+    font-size: 20px;
     line-height: 21px;
     color: #ffffff;
     border: none;
@@ -86,7 +86,10 @@
    text-align: right;
   }
 
-c
+  .h3_login a {
+    
+    color: #555454;
+  }
 
   #erroCPF1{
     text-align: end;
