@@ -103,6 +103,21 @@ E por último o seguinte comando deve ser executado:
 ```
 npm run dev
 ```
+É necessário tambem instalar algumas bibliotecas para que ocorra tudo bem, essas bibliotecas são:
+
+```
+npm install formik
+```
+
+```
+npm install yup
+```
+
+```
+npm install react-input-mask
+```
+
+
 Se tudo ocorrer bem a seguinte mensagem irá aparecer:
 ```
 VITE v4.1.4  ready in 715 ms <br>
@@ -111,7 +126,11 @@ VITE v4.1.4  ready in 715 ms <br>
   ➜  Network: use --host to expose<br>
   ➜  press h to show help<br>
 ```
+
 Para acessar enfim ao E-commerce deve-se clicar no http://localhost:5173, segurando a tecla Control (Ctrl).
+
+Assim que entrar na página de Login, será necessário criar um cadastro com USUÁRIO E SENHA, clicando no link: Cadastre-se aqui!
+Ao criar o usuário e senha o mesmo deve clicar no link de retorno para a página de login e utilizar as credenciais que acabou de criar na página de cadastro e assim terá acesso a página Home!
 
 
 
